@@ -104,9 +104,20 @@
     padding-right: 20px;
     display: block;
     margin-bottom: 10px;
+    position: relative;
+}
+.site__footer-menu li:before {
+    content:'';
+    position: absolute;
+    width: 8px;
+    height: 11px;
+    top: 0;
+    right: 0;
+    background: url("../img/site__footer-menu-arrow.png") no-repeat;
 }
 .site__footer-menu a {
     color: #fff;
+    font-size: 13px;
     border-bottom: 1px solid transparent;
     -webkit-transition: border-bottom 0.3s ease;
     transition: border-bottom 0.3s ease;
