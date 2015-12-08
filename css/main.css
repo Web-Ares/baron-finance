@@ -79,9 +79,9 @@ label {
 .site__title {
     font-size: 36px;
     color: #790301;
-    text-align: center;
+    text-align: right;
     margin-bottom: 13px;
-    font-weight: 400;
+    font-weight: 700;
 }
 .site__wrap {
     max-width: 1040px;
@@ -474,6 +474,32 @@ label {
 /*------------/services------------*/
 /* ------------ /social ------------ */
 
+/*------------about__item------------*/
+.about{
+    max-width: 714px;
+}
+.about__item>p{
+    font-size: 13px;
+    color: #777;
+    text-align: right;
+    max-width: 660px;
+    line-height: 18px;
+    margin: 0 auto 20px;
+}
+.about__item div{
+    width: 300px;
+    height: 154px;
+    margin: 0 auto 10px;
+}
+.about__item div img{
+    width: 100%;
+    height: 100%;
+}
+.about .site__title{
+    font-size: 25px;
+}
+/* ------------ /about__item ------------ */
+
 @media (min-width: 768px) {
 
     /* --------------- site --------------- */
@@ -503,6 +529,14 @@ label {
     }
     /* --------------- /site --------------- */
 
+    /*------------about__item------------*/
+    .about__item div{
+        width: 300px;
+        height: 154px;
+        float: left;
+        margin: 0 20px 20px 0;
+    }
+    /*------------/about__item------------*/
 }
 
 @media (min-width: 1040px) {
@@ -531,6 +565,14 @@ label {
         margin-bottom: 16px;
     }
     /* --------------- /site --------------- */
+
+    /*------------about__item------------*/
+    .about__item div{
+        width: 261px;
+        height: 130px;
+        margin: 0 36px 20px 0;
+    }
+    /*------------/about__item------------*/
 
     /* ------------ social ------------ */
     .social a {
