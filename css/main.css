@@ -290,12 +290,16 @@ label {
 .close-menu>span{
    opacity: 0;
 }
-/* --------------- /site --------------- */
-aside {
-    width: 210px;
+.site__aside {
     padding-top: 16px;
-    margin: 0 auto;
 }
+.site__aside .services__form{
+    display: block;
+    width: 100%;
+    margin: 0 0 20px;
+}
+/* --------------- /site --------------- */
+
 /* ---------- header__menu ------------ */
 .header__menu{
     display: none;
@@ -557,10 +561,6 @@ aside {
 }
 /* ------------ /about__item ------------ */
 
-aside .services__form{
-    display: block;
-}
-
 @media (min-width: 768px) {
 
     /* --------------- site --------------- */
@@ -599,6 +599,22 @@ aside .services__form{
         text-align: center;
         margin-bottom: 13px;
         font-weight: 400;
+    }
+    .site__wrap_aside:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    .site__aside {
+        width: 240px;
+        float: left;
+    }
+    .site__wrap-inner {
+        float: right;
+        width: calc(100% - 270px);
+    }
+    .site__wrap_aside {
+        padding-top: 62px;
     }
     /* --------------- /site --------------- */
 
@@ -704,18 +720,8 @@ aside .services__form{
     .about .site__title {
         text-align: right;
     }
-    .about {
-        width: 409px;
-        float: right;
-        padding-top: 62px;
-    }
     /*------------/about__item------------*/
-    aside {
-        width: 210px;
-        padding-top: 62px;
-        margin: 0 auto;
-        float: left;
-    }
+
 }
 
 @media (min-width: 1040px) {
@@ -743,10 +749,12 @@ aside .services__form{
     .site__footer-copyright {
         margin-bottom: 16px;
     }
-    /* --------------- /site --------------- */
-    aside {
-        float: left;
+    .site__wrap-inner {
+        float: right;
+        width: calc(100% - 270px);
     }
+    /* --------------- /site --------------- */
+
     /*------------about__item------------*/
     .about__item div{
         width: 264px;
@@ -762,7 +770,7 @@ aside .services__form{
         margin-right: 21px;
         float: right;
 }
-/*------------/about__item------------*/
+    /*------------/about__item------------*/
 
     /* ------------ social ------------ */
     .social a {
