@@ -7,8 +7,8 @@
     font-size: 13px;
     color: #777;
     text-align: right;
-    line-height: 18px;
-    margin-bottom: 17px;
+    line-height: 19px;
+    margin-bottom: 15px;
 }
 .about__item{
     margin-bottom: 26px;
@@ -27,9 +27,6 @@
 .about .site__title{
     font-size: 25px;
     font-weight: 700;
-}
-.site__aside .contact-form{
-    display: block;
 }
 /* ------------ /about__item ------------ */
 
@@ -52,8 +49,8 @@
         width: 264px;
         height: 136px;
         float: left;
-        left: -12px;
-        top: -7px;
+        left: 0px;
+        top: -4px;
         margin: 0 15px 20px 0;
     }
     .about{
@@ -61,6 +58,7 @@
         display: inline-block;
         margin-right: 21px;
         float: right;
+        padding: 13px 0 0 0;
     }
     /*------------/about__item------------*/
 }

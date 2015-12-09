@@ -7,15 +7,15 @@
     font-size: 13px;
     color: #777;
     text-align: right;
-    line-height: 18px;
-    margin-bottom: 17px;
+    line-height: 19px;
+    margin-bottom: 24px;
 }
 .service__item{
     margin-bottom: 26px;
 }
 .service__item div{
     position: relative;
-    width: 300px;
+    width: 320px;
     height: 155px;
     margin: 0 auto;
     margin-bottom: 22px;
@@ -25,35 +25,35 @@
     background-size: cover;
 }
 .service .site__title{
-    font-size: 25px;
+    font-size: 30px;
     font-weight: 700;
-}
-
-.site__aside .contact-form{
-    display: block;
+    text-align: right;
 }
 .service h2{
     font-size: 20px;
     color: #780500;
     margin-bottom: 10px;
+    line-height: 21px;
 }
 .service ul{
     position: relative;
-    padding: 10px 20px 10px 0;
+    padding: 24px 50px 14px 0;
     background: #f0eeee;
 }
 .service ul li{
-    width: 225px;
+    width: 100%;
     position: relative;
     font-size: 13px;
     display: inline-block;
-    margin-bottom: 10px;
+    vertical-align: top;
+    margin-bottom: 12px;
     padding-right: 15px;
+    padding-left: 37px;
 }
 .service ul li:before{
     content:"";
     position: absolute;
-    right: 0;
+    right: -15px;
     width:12px;
     height:12px;
     background: url("../img/services-right.png") no-repeat center;
@@ -68,24 +68,37 @@
     }
     .service .site__title {
         text-align: right;
+        margin-bottom: 17px;
+    }
+    .service__item p {
+        margin-bottom: 30px;
     }
     /*------------/about__item------------*/
 }
 @media (min-width: 1040px) {
     /*------------about__item------------*/
-    .service__item div{
-        width: 264px;
-        height: 136px;
+    .service ul {
+        margin-top: 16px;
+        padding: 27px 48px 10px 0;
+    }
+    .service ul li {
+        width: initial;
+        margin-bottom: 13px;
+        padding-left: 41px;
+    }
+    .service__item div {
+        width: 320px;
+        height: 175px;
         float: left;
-        left: -12px;
-        top: -7px;
-        margin: 0 15px 20px 0;
+        left: -2px;
+        top: -39px;
+        margin: 0 15px -21px 8px;
     }
     .service{
-        width: 705px;
         display: inline-block;
         margin-right: 21px;
         float: right;
+        padding-top: 30px;
     }
     /*------------/about__item------------*/
 }
