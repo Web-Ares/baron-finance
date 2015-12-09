@@ -1,4 +1,5 @@
 $(function(){
+
     $( function(){
         $('.header__menu').each(function () {
             mobileMenu($(this));
@@ -12,6 +13,9 @@ $(function(){
         $.each($('.tabs'), function () {
             new Tabs( $( this ) );
         });
+        $.each( $('.gallery'), function(){
+            new Gallery ( $(this) );
+        } );
     } );
 
     var Tabs = function (obj) {
@@ -265,6 +269,104 @@ $(function(){
 
         _init();
     };
-    
+
+    var Gallery = function (obj) {
+
+        var _obj = obj,
+            _btnParent = $(_obj).parents(".site__wrap"),
+            _btnNext = _btnParent.find(".swiper-button-next"),
+            _btnPrev = _btnParent.find(".swiper-button-prev"),
+            _sw = null,
+            _loopedSlides = null;
+
+        var addEvents = function () {
+                $(window).on({
+                    resize: function () {
+                        updateSwiper();
+                    },
+                    load:function(){
+                        createSwiper();
+                    }
+                });
+
+                _btnNext.on({
+                    click: function(){
+                        if (document.all && !window.atob) {
+                            var activeBullet = $(_obj).find(".swiper-pagination-bullet-active"),
+                                activeBulletFirst = $(_obj).find(".swiper-pagination-bullet").eq(0);
+                            if ( activeBullet.next().length ){
+                                activeBullet.next().trigger("click");
+                            } else {
+                                activeBulletFirst.trigger("click");
+                            }
+                        }
+                    }
+                });
+
+                _btnPrev.on({
+                    click: function(){
+                        if (document.all && !window.atob) {
+                            var activeBullet = $(_obj).find(".swiper-pagination-bullet-active"),
+                                activeBulletLast = $(_obj).find(".swiper-pagination-bullet").eq(-1);
+                            if ( activeBullet.prev().length ){
+                                activeBullet.prev().trigger("click");
+                            } else {
+                                activeBulletLast.trigger("click");
+                            }
+                        }
+                    }
+                });
+
+            },
+            createSwiper = function () {
+
+                var perView = 4;
+                if ($(window).width() < 991 && $(window).width() > 768) {
+                    perView = 3;
+                } else if ($(window).width() <= 768 && $(window).width() > 480) {
+                    perView = 2;
+                }else if ($(window).width() < 480){
+                    perView = 1;
+                }
+
+                _sw = new Swiper(_obj, {
+                    slidesPerView: perView,
+                    autoplay:5000,
+                    loop:true,
+                    watchSlidesVisibility: true,
+                    speed: 700,
+                    paginationClickable: true,
+                    nextButton: _btnNext,
+                    prevButton: _btnPrev,
+                    spaceBetween: 23,
+                    autoplayDisableOnInteraction:false
+                });
+
+            },
+            calculateLoopedSlides = function(){
+                if ( _obj.hasClass("gallery_2") ){
+                    _loopedSlides = (_obj.find(".swiper-slide").length)*2;
+                }
+            },
+            updateSwiper = function () {
+
+                _sw.params.slidesPerView = 4;
+                if ($(window).width() < 991 && $(window).width() > 768) {
+                    _sw.params.slidesPerView = 3;
+                } else if ($(window).width() <= 768 && $(window).width() > 480) {
+                    _sw.params.slidesPerView = 2;
+                }else if ($(window).width() < 480) {
+                    _sw.params.slidesPerView = 1;
+                }
+
+            },
+            init = function () {
+                calculateLoopedSlides();
+                addEvents();
+            };
+
+        init();
+
+    };
     
 });
