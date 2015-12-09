@@ -112,8 +112,8 @@
     display: block;
     width: 100%;
     border: none;
-    padding:  0 0 0;
-    margin: 0;
+    padding: 0 0 0;
+    margin: 0 0 55px;
 }
 .contact-us form > span {
     font-size: 20px;
@@ -186,6 +186,7 @@
     .contact-us form {
         width: 68.5%;
         padding: 12px 63px 0 0;
+        margin-bottom: 75px;
     }
     /*------------/contact-us------------*/
 
