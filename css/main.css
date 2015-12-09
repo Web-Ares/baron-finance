@@ -622,7 +622,7 @@ aside .services__form{
 .tabs__controls-wrap div {
     display: inline-block;
     vertical-align: top;
-    margin-right: 10px;
+    margin-right: 19px;
     font-size: 20px;
     color: #fff;
 }
@@ -636,7 +636,8 @@ aside .services__form{
     background: #780500;
     border-radius: 10px 10px 0 0;
     text-align: center;
-    padding-top: 10px;
+    padding-top: 7px;
+    font-weight: 700;
     -webkit-transition: color 0.3s ease, background 0.3s ease;
     transition: color 0.3s ease, background 0.3s ease;
     cursor: pointer;
