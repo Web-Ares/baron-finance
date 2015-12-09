@@ -473,10 +473,54 @@ aside {
     letter-spacing: -0.3px;
     margin-bottom: 13px;
 }
-.services__form {
-    display: none;
-}
+
 /*------------/services------------*/
+
+/*-----------contact-form---------*/
+.contact-form {
+
+}
+.contact-form {
+    position: relative;
+    top: 1px;
+    left: -2px;
+    display: none;
+    vertical-align: top;
+    border: 1px solid #dbdbdb;
+    padding: 10px 10px 0px 9px;
+    width: 242px;
+    height: 387px;
+    float: left;
+    margin-left: 30px;
+}
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+}
+.contact-form > span {
+    display: block;
+    text-align: center;
+    margin-bottom: 9px;
+    font-size: 16px;
+    line-height: 35px;
+    color: #fff;
+    font-weight: 700;
+    background: #580200;
+    background: -webkit-linear-gradient(top,  #580200 0%,#800500 100%);
+    background: linear-gradient(to bottom,  #580200 0%,#800500 100%);
+}
+.contact-form .btn {
+    height: 25px;
+    width: 80px;
+    border: none;
+    border-radius: 0;
+    font-size: 13px;
+    margin: -5px 0 0;
+    position: relative;
+    top: -5px;
+    padding: 0;
+}
+/*-----------/contact-form---------*/
 
 /*------------about__item------------*/
 .about{
@@ -605,24 +649,28 @@ aside .services__form{
         line-height: 17px;
         margin-bottom: 20px;
     }
-    .services__form {
+
+    /*------------/services------------*/
+
+    /*------------contact-form-----------*/
+    .contact-form {
         position: relative;
         top: 1px;
         left: -2px;
         display: inline-block;
         vertical-align: top;
         border: 1px solid #dbdbdb;
-        padding: 10px 10px 0px 9px;
+        padding: 10px 10px 0 9px;
         width: 242px;
         height: 387px;
         float: left;
         margin-left: 30px;
     }
-    .services__form input,
-    .services__form textarea {
+    .contact-form input,
+    .contact-form textarea {
         width: 100%;
     }
-    .services__form > span {
+    .contact-form > span {
         display: block;
         text-align: center;
         margin-bottom: 9px;
@@ -634,7 +682,7 @@ aside .services__form{
         background: -webkit-linear-gradient(top,  #580200 0%,#800500 100%);
         background: linear-gradient(to bottom,  #580200 0%,#800500 100%);
     }
-    .services__form .btn {
+    .contact-form .btn {
         height: 25px;
         width: 80px;
         border: none;
@@ -645,7 +693,7 @@ aside .services__form{
         top: -5px;
         padding: 0;
     }
-    /*------------/services------------*/
+    /*------------contact-form-----------*/
 
     /*------------about__item------------*/
     .about__item div{
@@ -756,10 +804,13 @@ aside .services__form{
         width: 324px;
         margin-left: 80px;
     }
-    .services__form {
+    /*------------/services------------*/
+
+    /*----------contact-form--------*/
+    .contact-form {
         float: none;
         margin-left: 0;
     }
-    /*------------/services------------*/
+    /*----------/contact-form--------*/
 
 }
