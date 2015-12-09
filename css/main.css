@@ -1,7 +1,7 @@
 @charset "utf-8";
 /* --------------- Style to null --------------- */
 *{-webkit-text-size-adjust: none; }
-*{-moz-box-sizing:border-box;box-sizing:border-box;}html,body,div,span,h1,h2,h3,h4,h5,h6,p,em,img,strong,sub,sup,b,u,i,dl,dt,dd,ol,ul,li,fieldset,form,label,table,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,a,footer,header,hgroup,menu,nav,section,summary,time,mark,audio,video{-webkit-tap-highlight-color: rgba(0,0,0,0); border:0;outline:0;vertical-align:baseline;background:transparent;font-size:100%;margin:0;padding:0;}a{background:transparent;}table{border-collapse:collapse;border-spacing:0;}td,td img{vertical-align:top;}input,select,button,textarea{font-size:12px;font-family:Arial, Helvetica, sans-serif;margin:0;}input[type="text"],input[type="password"],textarea,input[type="email"],input[type="phone"],input[type="number"]{font:12px Arial, Helvetica, sans-serif;/* padding:0; */}input[type="checkbox"]{vertical-align:bottom;}input[type="radio"]{vertical-align:text-bottom;}sub{vertical-align:sub;font-size:smaller;}sup{vertical-align:super;font-size:smaller;}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block;}ul,ol{list-style:none;}html{overflow-y:scroll;overflow-x:auto;}html,body{height:100%;}body{line-height:1;color:#000;text-align:left;z-index:1;position:relative;}input [type='text']{padding:0;}textarea{resize:none;overflow:auto;}label,input[type="button"],input[type="submit"],button{cursor:pointer;}input[type="button"],input[type="reset"],input[type="submit"],button,input[type="text"],input[type="password"],textarea,input[type="email"],input[type="tel"],input[type="phone"],input[type="number"]{-webkit-appearance:none;}a,a:visited,a:hover,a:focus,a:active{text-decoration:none;}input[type="submit"]::-moz-focus-inner,button::-moz-focus-inner{border:0;padding:0;}input:invalid{outline:none;-moz-box-shadow:none;border:none;}::-ms-clear{display:none;}input,textarea,input[type="search"]:focus,:focus{outline:none;}
+*{-moz-box-sizing:border-box;box-sizing:border-box;}html,body,div,span,h1,h2,h3,h4,h5,h6,p,em,img,strong,sub,sup,b,u,i,dl,dt,dd,ol,ul,li,fieldset,form,label,table,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,figcaption,figure,a,footer,header,menu,nav,section,summary,time,mark,audio,video{-webkit-tap-highlight-color: rgba(0,0,0,0); border:0;outline:0;vertical-align:baseline;background:transparent;font-size:100%;margin:0;padding:0;}a{background:transparent;}table{border-collapse:collapse;border-spacing:0;}td,td img{vertical-align:top;}input,select,button,textarea{font-size:12px;font-family:Arial, Helvetica, sans-serif;margin:0;}input[type="text"],input[type="password"],textarea,input[type="email"],input[type="phone"],input[type="number"]{font:12px Arial, Helvetica, sans-serif;/* padding:0; */}input[type="checkbox"]{vertical-align:bottom;}input[type="radio"]{vertical-align:text-bottom;}sub{vertical-align:sub;font-size:smaller;}sup{vertical-align:super;font-size:smaller;}article,aside,details,figcaption,figure,footer,header,menu,nav,section{display:block;}ul,ol{list-style:none;}html{overflow-y:scroll;overflow-x:auto;}html,body{height:100%;}body{line-height:1;color:#000;text-align:left;z-index:1;position:relative;}input [type='text']{padding:0;}textarea{resize:none;overflow:auto;}label,input[type="button"],input[type="submit"],button{cursor:pointer;}input[type="button"],input[type="reset"],input[type="submit"],button,input[type="text"],input[type="password"],textarea,input[type="email"],input[type="tel"],input[type="phone"],input[type="number"]{-webkit-appearance:none;}a,a:visited,a:hover,a:focus,a:active{text-decoration:none;}input[type="submit"]::-moz-focus-inner,button::-moz-focus-inner{border:0;padding:0;}input:invalid{outline:none;-moz-box-shadow:none;border:none;}::-ms-clear{display:none;}input,textarea,input[type="search"]:focus,:focus{outline:none;}
 .centering {
     display: table;
     width: 100%;
@@ -58,14 +58,6 @@ label {
     font-weight: 700;
     margin-bottom: 8px;
 }
-/* --------------- fonts --------------- */
-@font-face {
-    font-family: "Font Name";
-    src: url("../fonts/font.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
-}
-/* --------------- /fonts --------------- */
 
 /* --------------- site --------------- */
 .site {
@@ -78,7 +70,6 @@ label {
     direction: rtl;
     text-align: right;
 }
-
 .site:after {
     content: '';
     display: block;
@@ -624,9 +615,8 @@ aside .services__form{
 /* ------------ tabs ------------ */
 .tabs {
     padding-top: 23px;
+    margin-bottom: 49px;
 }
-.tabs__controls {}
-.tabs__controls-wrap {}
 .tabs__controls-wrap div {
     display: inline-block;
     vertical-align: top;
@@ -661,8 +651,14 @@ aside .services__form{
 .tabs__wrapper {
     border: 1px solid #ddd;
     border-radius: 2px;
+    position: relative;
 }
-.tabs {}
+.tabs__wrapper > div {
+    padding-bottom: 1px;
+}
+.tabs__wrapper > div > div {
+    padding-bottom: 1px;
+}
 /* ------------ /tabs ------------ */
 
 @media (min-width: 768px) {
@@ -722,7 +718,7 @@ aside .services__form{
         width: calc(100% - 270px);
     }
     .site__wrap_aside {
-        padding-top: 62px;
+        padding-top: 39px;
     }
     /* --------------- /site --------------- */
 
@@ -900,7 +896,7 @@ aside .services__form{
     }
     .site__wrap-inner {
         float: right;
-        width: calc(100% - 270px);
+        width: calc(100% - 290px);
     }
     /* --------------- /site --------------- */
 
@@ -918,8 +914,8 @@ aside .services__form{
         display: inline-block;
         margin-right: 21px;
         float: right;
-}
-/*------------/about__item------------*/
+    }
+    /*------------/about__item------------*/
 
     /* ---------- header__menu ------------ */
     .header__menu {
@@ -991,7 +987,7 @@ aside .services__form{
         top: 11px;
         left: 0;
         margin-left: 0;
-     }
+    }
     .logo img {
         width: 188px;
         height: 95px;
@@ -1053,5 +1049,16 @@ aside .services__form{
         padding: 83px 0 0 0;
     }
     /*------------/about-company------------*/
+
+    /* ------------ tabs ------------ */
+    .tabs__controls-wrap div {
+        margin-right: 15px;
+    }
+    .tabs__controls-wrap div span {
+        width: 159px;
+        height: 51px;
+        padding-top: 14px;
+    }
+    /* ------------ /tabs ------------ */
 
 }
