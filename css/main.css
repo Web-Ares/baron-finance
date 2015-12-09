@@ -486,13 +486,9 @@ label {
     letter-spacing: -0.3px;
     margin-bottom: 13px;
 }
-
 /*------------/services------------*/
 
 /*-----------contact-form---------*/
-.contact-form {
-
-}
 .contact-form {
     position: relative;
     top: 1px;
@@ -534,45 +530,6 @@ label {
     padding: 0;
 }
 /*-----------/contact-form---------*/
-
-/*------------about__item------------*/
-.about{
-    max-width: 714px;
-    padding-top: 25px;
-}
-.about__item>p{
-    font-size: 13px;
-    color: #777;
-    text-align: right;
-    line-height: 18px;
-    margin-bottom: 17px;
-}
-.about__item{
-    margin-bottom: 26px;
-}
-.about__item div{
-    position: relative;
-    width: 300px;
-    height: 155px;
-    margin: 0 auto;
-    margin-bottom: 22px;
-    overflow: hidden;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-.about .site__title{
-    font-size: 25px;
-    font-weight: 700;
-}
-.about .site__wrap{
-    padding: 0 13px 0 0;
-}
-/* ------------ /about__item ------------ */
-
-aside .services__form{
-    display: block;
-}
 
 /*------------about-company------------*/
 .about-company {
@@ -899,23 +856,6 @@ aside .services__form{
         width: calc(100% - 290px);
     }
     /* --------------- /site --------------- */
-
-    /*------------about__item------------*/
-    .about__item div{
-        width: 264px;
-        height: 136px;
-        float: left;
-        left: -12px;
-        top: -7px;
-        margin: 0 15px 20px 0;
-    }
-    .about{
-        width: 705px;
-        display: inline-block;
-        margin-right: 21px;
-        float: right;
-    }
-    /*------------/about__item------------*/
 
     /* ---------- header__menu ------------ */
     .header__menu {
