@@ -325,13 +325,13 @@ label {
 .close-menu>span{
     opacity: 0;
 }
+.site__aside .contact-form{
+    display: block;
+    margin-left: 0;
+    width: 100%;
+}
 .site__aside {
     padding-top: 16px;
-}
-.site__aside .services__form{
-    display: block;
-    width: 100%;
-    margin: 0 0 20px;
 }
 /* --------------- /site --------------- */
 
@@ -718,7 +718,6 @@ label {
 /* ------------ /recommend-text ------------ */
 
 @media (min-width: 768px) {
-
     /* --------------- site --------------- */
     .site:after,
     .site__footer-layout {
@@ -766,7 +765,7 @@ label {
         clear: both;
     }
     .site__aside {
-        width: 240px;
+        width: 242px;
         float: left;
     }
     .site__wrap-inner {
@@ -774,7 +773,7 @@ label {
         width: calc(100% - 270px);
     }
     .site__wrap_aside {
-        padding-top: 39px;
+        padding: 45px 7px 0 13px;
     }
     .site__caption {
         border-top: 1px solid #000;
