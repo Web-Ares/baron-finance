@@ -226,6 +226,36 @@ label {
     cursor: default;
     color: #a3a2a2;
 }
+.site__caption {
+    border-top: 6px solid #000;
+    background: #404040;
+    height: 131px;
+    margin-bottom: 79px;
+}
+.site__caption:before {
+    content: '';
+    position: absolute;
+    height: 1px;
+    left: 0;
+    right: 0;
+    top: 7px;
+    background: #505050;
+}
+.site__caption > span {
+    display: block;
+    max-width: 1040px;
+    margin: 0 auto;
+    padding: 0 26px;
+}
+.site__caption > span span {
+    display: table-cell;
+    height: 125px;
+    font-size: 30px;
+    font-weight: 700;
+    color: #fff;
+    vertical-align: middle;
+    /* margin-bottom: 11px; */
+}
 .open-menu {
     position: absolute;
     top: 5px;
@@ -677,6 +707,19 @@ label {
     }
     .site__wrap_aside {
         padding-top: 39px;
+    }
+    .site__caption {
+        border-top: 1px solid #000;
+        height: 126px;
+    }
+    .site__caption:before {
+        top: 1px;
+    }
+    .site__caption > span {
+        padding: 0 20px;
+    }
+    .site__caption > span span {
+        padding: 0 0 4px;
     }
     /* --------------- /site --------------- */
 

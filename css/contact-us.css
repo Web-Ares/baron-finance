@@ -1,0 +1,192 @@
+
+
+/*------------map------------*/
+.map {
+    width: 100%;
+    height: 218px;
+    position: relative;
+    border: 1px solid #b1b1b1;
+    border-radius: 4px;
+    padding: 7px;
+    margin-bottom: 28px;
+}
+.map__canvas {
+    width: 100%;
+    height: 100%;
+}
+/*------------/map------------*/
+
+/*------------contact-us------------*/
+.contact-us:after {
+    content: '/';
+    height: 0;
+    overflow: hidden;
+    display: block;
+    clear: both;
+}
+.contact-us__contacts {
+    background: #f0f0f0;
+    border: 1px solid #b1b1b1;
+    border-radius: 4px;
+    padding: 21px 0 0 0;
+    margin: 0 0 21px;
+}
+.contact-us__contacts > span {
+    padding: 0 24px 0 0;
+}
+.contact-us__contacts > ul {
+    padding: 14px 0 12px;
+}
+.contact-us__contacts li {
+    position: relative;
+    font-size: 12px;
+    color: #4d4d4d;
+    display: block;
+    height: 56px;
+    padding: 0 54px 0 0;
+    overflow: hidden;
+    line-height: 14px;
+}
+.contact-us__contacts li:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background: url(../img/address-border.png) repeat-x;
+}
+.contact-us__contacts li:last-child:after {
+    display: none;
+}
+.contact-us__contacts li div {
+    display: table-cell;
+    height: 56px;
+    vertical-align: middle;
+}
+.contact-us__contacts li address {
+    font-style: normal;
+    display: table-cell;
+    vertical-align: middle;
+    letter-spacing: -0.3px;
+}
+.contact-us__contacts li a {
+    color: #4d4d4d;
+    display: table-cell;
+    vertical-align: middle;
+}
+.contact-us__contacts-mail a {
+    border: 1px solid transparent;
+    -webkit-transition: border .3s ease-in-out;
+    transition: border .3s ease-in-out;
+}
+.contact-us__contacts-mail a:hover {
+    border-bottom: 1px solid #4d4d4d;
+}
+.contact-us__contacts li:before {
+    content: '';
+    position: absolute;
+}
+.contact-us__contacts-address:before {
+    top: 9px;
+    right: 20px;
+    width: 19px;
+    height: 26px;
+    background: url(../img/contacts-sprite.png) 0 0  no-repeat;
+}
+.contact-us__contacts-phone:before {
+    top: 12px;
+    right: 19px;
+    width: 19px;
+    height: 26px;
+    background: url(../img/contacts-sprite.png) -28px 0  no-repeat;
+}
+.contact-us__contacts-mail:before {
+    top: 18px;
+    right: 15px;
+    width: 26px;
+    height: 18px;
+    background: url(../img/contacts-sprite.png) 100% 0  no-repeat;
+}
+.contact-us form {
+    display: block;
+    width: 100%;
+    border: none;
+    padding:  0 0 0;
+    margin: 0;
+}
+.contact-us form > span {
+    font-size: 20px;
+    display: block;
+    background: transparent;
+    height: auto;
+    color: #373737;
+    text-align: right;
+    font-weight: 400;
+    margin-bottom: 11px;
+}
+.contact-us form > span span {
+    font-weight: 700;
+    color: #000;
+}
+.contact-us form input,
+.contact-us form textarea {
+    border: 1px solid #b1b1b1;
+    height: 33px;
+    margin-bottom: 17px;
+    padding: 0 21px 0 0;
+}
+.contact-us form textarea {
+    height: 150px;
+    padding: 16px 22px 0 0;
+}
+.contact-us form .btn {
+    height: 30px;
+    width: 98px;
+    margin: -2px 0 0 0;
+    top: 0;
+}
+/*------------/contact-us------------*/
+
+@media (min-width: 768px) {
+
+    /*------------map------------*/
+    .map {
+        height: 450px;
+        border-radius: 11px;
+        padding: 17px;
+        margin-bottom: 42px;
+    }
+    /*------------/map------------*/
+
+    /*------------contact-us------------*/
+    .contact-us__contacts {
+        border-radius: 7px;
+        width: 264px;
+        float: left;
+    }
+    .contact-us form {
+        float: right;
+        width: 55%;
+        padding: 12px 0 0 0;
+    }
+    /*------------/contact-us------------*/
+
+}
+
+@media (min-width: 1040px) {
+
+    /*------------map------------*/
+    .map {
+        height: 547px;
+    }
+    /*------------/map------------*/
+
+    /*------------contact-us------------*/
+    .contact-us form {
+        width: 68.5%;
+        padding: 12px 63px 0 0;
+    }
+    /*------------/contact-us------------*/
+
+}
