@@ -86,7 +86,7 @@ label {
 .site__wrap {
     max-width: 1040px;
     margin: 0 auto;
-    padding: 0 7px;
+    padding: 0 24px;
 }
 .site__content {
     position: relative;
@@ -288,7 +288,7 @@ label {
     border-top-width: 3px;
 }
 .close-menu>span{
-   opacity: 0;
+    opacity: 0;
 }
 .site__aside {
     padding-top: 16px;
@@ -561,6 +561,46 @@ label {
 }
 /* ------------ /about__item ------------ */
 
+aside .services__form{
+    display: block;
+}
+
+/*------------about-company------------*/
+.about-company {
+    margin: 10px 0 0;
+    padding: 23px 0 144px;
+    background: url(../img/about-bg.jpg) no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.about-company__desktop-pic {
+    display: none;
+}
+.about-company__mobile-pic {
+    display: block;
+    width: 398px;
+    margin: 0 auto 38px;
+}
+.about-company__mobile-pic img {
+    width: 100%;
+}
+.about-company__text {
+    color: #fff;
+    text-align: center;
+}
+.about-company__text span {
+    display: block;
+    margin-bottom: 11px;
+    font-size: 36px;
+}
+.about-company__text p {
+    font-size: 14px;
+    line-height: 18px;
+    width: 398px;
+    margin: 0 auto;
+}
+/*------------/about-company------------*/
+
 @media (min-width: 768px) {
 
     /* --------------- site --------------- */
@@ -721,7 +761,41 @@ label {
         text-align: right;
     }
     /*------------/about__item------------*/
+    aside {
+        width: 210px;
+        padding-top: 62px;
+        margin: 0 auto;
+        float: left;
+    }
 
+    /*------------about-company------------*/
+    .about-company {
+        margin: -9px 0 0;
+        height: 323px;
+        padding: 0;
+    }
+    .about-company__desktop-pic {
+        display: block;
+        float: left;
+    }
+    .about-company__mobile-pic {
+        display: none;
+    }
+    .about-company__text {
+        float: right;
+        width: 50%;
+        padding: 81px 0 0 0;
+        text-align: right;
+    }
+    .about-company__text span {
+        margin-bottom: 22px;
+    }
+    .about-company__text p {
+        line-height: 16px;
+        width: auto;
+        margin: 0;
+    }
+    /*------------/about-company------------*/
 }
 
 @media (min-width: 1040px) {
@@ -763,7 +837,7 @@ label {
         left: -12px;
         top: -7px;
         margin: 0 15px 20px 0;
-}
+    }
     .about{
         width: 705px;
         display: inline-block;
@@ -820,5 +894,12 @@ label {
         margin-left: 0;
     }
     /*----------/contact-form--------*/
+
+    /*------------about-company------------*/
+    .about-company__text {
+        width: 57%;
+        padding: 83px 0 0 0;
+    }
+    /*------------/about-company------------*/
 
 }
