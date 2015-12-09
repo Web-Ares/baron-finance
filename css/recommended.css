@@ -1,0 +1,40 @@
+@charset "utf-8";
+
+/*
+    recommended styles
+    version: 09.12.2015
+
+    recommended
+
+*/
+
+/* ------------ recommended ------------ */
+.recommended {}
+.recommended__logo {
+    text-align: center;
+    padding: 17px 0 10px;
+}
+.recommended__logo a {
+    display: inline-block;
+    width: 122px;
+    height: 122px;
+    border: 1px solid #dfdfdf;
+    border-radius: 2px;
+    margin: 0 3px 5px;
+    -webkit-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease;
+}
+.recommended__logo a:hover {
+    opacity: 0.7;
+}
+.recommended__logo a > span {}
+.recommended__logo a > span > span {
+}
+.recommended__logo a img {
+    display: inline-block;
+    max-width: 100%;
+    height: auto;
+}
+.recommended {}
+.recommended {}
+/* ------------ /recommended ------------ */
