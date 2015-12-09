@@ -655,6 +655,7 @@ aside .services__form{
 }
 .tabs__wrapper > div {
     padding-bottom: 1px;
+    display: none;
 }
 .tabs__wrapper > div > div {
     padding-bottom: 1px;
