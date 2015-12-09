@@ -230,7 +230,7 @@ label {
     border-top: 6px solid #000;
     background: #404040;
     height: 131px;
-    margin-bottom: 79px;
+    margin-bottom: 29px;
 }
 .site__caption:before {
     content: '';
@@ -711,6 +711,7 @@ label {
     .site__caption {
         border-top: 1px solid #000;
         height: 126px;
+        margin-bottom: 79px;
     }
     .site__caption:before {
         top: 1px;
