@@ -117,7 +117,6 @@ label {
 .site:after,
 .site__footer-layout {
     height: 810px;
-    padding-top: 150px;
 }
 .site__footer-layout {
     max-width: 1040px;
@@ -653,6 +652,9 @@ label {
 .recommend-text {
     padding: 29px 0 0;
 }
+.recommend-text__wrap {
+    padding-bottom: 6px;
+}
 .recommend-text__title {
     font-size: 36px;
     color: #780500;
@@ -716,6 +718,33 @@ label {
     border-bottom: 1px solid #780500;
 }
 /* ------------ /recommend-text ------------ */
+
+/* ------------ recommend-icon ------------ */
+.recommend-icon {
+    margin-bottom: 38px;
+    background: #5d0a08;
+    background: -webkit-linear-gradient(top,  #5d0a08 0%,#7f0500 100%);
+    background: linear-gradient(to bottom,  #5d0a08 0%,#7f0500 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5d0a08', endColorstr='#7f0500',GradientType=0 );
+}
+.recommend-icon .swiper-slide a {
+    border: 1px solid #fec8c5;
+    border-radius: 3px;
+    width: 100%;
+    display: block;
+    padding-bottom: 39.5%;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+}
+.recommend-icon .site__wrap {
+    position: relative;
+    padding: 0 58px;
+}
+.recommend-icon .swiper-container {
+    padding: 40px 0 43px;
+}
+/* ------------ /recommend-icon ------------ */
 
 @media (min-width: 768px) {
     /* --------------- site --------------- */
@@ -936,15 +965,15 @@ label {
     /*------------/about-company------------*/
 
     /* ------------ recommend-text ------------ */
-    .recommend-text {}
-    .recommend-text__title {}
-    .recommend-text__wrap {}
-    .recommend-text__item {}
-    .recommend-text__item blockquote {}
-    .recommend-text__item blockquote:before {}
-    .recommend-text__item > span {}
-    .recommend-text__wrap {}
-    .recommend-text__wrap {}
+    .recommend-text__wrap {
+        padding-bottom: 1px;
+    }
+    .recommend-text__item {
+        margin-bottom: 50px;
+    }
+    .recommend-text__wrap {
+        padding-bottom: 28px;
+    }
     /* ------------ /recommend-text ------------ */
 
 }
@@ -1133,12 +1162,12 @@ label {
     }
     .recommend-text__wrap {
         text-align: center;
+        padding-bottom: 18px;
     }
     .recommend-text__item {
         width: 308px;
         display: inline-block;
         vertical-align: top;
-        margin: 0 0 20px;
         padding-bottom: 31px;
     }
     .recommend-text__item:nth-child(3n+2) {
@@ -1175,5 +1204,25 @@ label {
         height: 15px;
     }
     /* ------------ /recommend-text ------------ */
+
+    /* ------------ recommend-icon ------------ */
+    .recommend-icon {
+        margin-bottom: 20px;
+    }
+    .recommend-icon .swiper-button-next,
+    .recommend-icon .swiper-button-prev {
+        display: none;
+    }
+    .recommend-icon .swiper-container {
+        padding: 18px 0 17px;
+    }
+    .recommend-icon .swiper-slide {
+        width: 232px;
+        height: 97px;
+    }
+    .recommend-icon .site__wrap {
+        padding: 0 20px;
+    }
+    /* ------------ /recommend-icon ------------ */
 
 }
