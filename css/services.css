@@ -82,9 +82,9 @@
         padding: 27px 48px 10px 0;
     }
     .service ul li {
-        width: initial;
+        width: 32.5%;
         margin-bottom: 13px;
-        padding-left: 41px;
+        padding-left: 15px;
     }
     .service__item div {
         width: 320px;
