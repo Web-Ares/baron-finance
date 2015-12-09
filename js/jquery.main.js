@@ -13,6 +13,12 @@ $(function(){
             new Tabs( $( this ) );
         });
 
+        $(".header__menu-layout> li").each(function(){
+
+            if ( $(this).children("ul").length) {
+                $(this).addClass('submenu');
+            }
+        })
 
     } );
 

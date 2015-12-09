@@ -867,9 +867,8 @@ label {
         background: transparent;
         border-top: none;
         position: absolute;
-        top: 51px;
-        /* text-align: right; */
         left: auto;
+        top: 42px;
     }
     .header__menu-layout {
         display: table;
@@ -897,9 +896,9 @@ label {
     .header__menu li ul {
         display: block;
         position: absolute;
-        top: 28px;
+        top: 39px;
         background-color: #7e0500;
-        right: -5px;
+        right: -1px;
         width: 180px;
         opacity: 0;
         visibility: hidden;
