@@ -1231,7 +1231,6 @@ label {
         font-size: 26px;
         margin-bottom: 12px;
     }
-    .partner__title span {}
     .partner__sub-title {
         font-size: 24px;
         max-width: calc(100% - 350px);
@@ -1509,11 +1508,19 @@ label {
         background: url("../pic/partner__pic_2.png") no-repeat;
         background-size: contain;
     }
-    .partner__title {}
-    .partner__title span {}
-    .partner__sub-title {}
     .partner p {
         max-width: calc(100% - 625px);
+    }
+    /* ------------ /partner ------------ */
+
+}
+
+@media (min-width: 1300px) {
+
+    /* ------------ partner ------------ */
+    .partner:before {
+        left: 0;
+        margin-left: 0;
     }
     /* ------------ /partner ------------ */
 
