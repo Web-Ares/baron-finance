@@ -795,6 +795,7 @@ label {
     max-width: 381px;
     margin: 0 auto 72px;
     width: 100%;
+    display: block;
 }
 .recommend-text__item:before {
     content: '';
@@ -829,7 +830,7 @@ label {
     background: url("../img/blockquote.png") no-repeat;
     background-size: contain;
 }
-.recommend-text__item > a {
+.recommend-text__item > span {
     font-size: 15px;
     color: #780500;
     font-weight: 700;
@@ -840,7 +841,7 @@ label {
     -webkit-transition: border-bottom 0.3s ease;
     transition: border-bottom 0.3s ease;
 }
-.recommend-text__item > a:hover {
+.recommend-text__item:hover > span {
     border-bottom: 1px solid #780500;
 }
 /* ------------ /recommend-text ------------ */
