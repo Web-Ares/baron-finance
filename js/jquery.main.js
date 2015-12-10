@@ -16,6 +16,13 @@ $(function(){
         $.each( $('.gallery'), function(){
             new Gallery ( $(this) );
         } );
+        
+        $(".header__menu-layout> li").each(function(){
+
+            if ( $(this).children("ul").length) {
+                $(this).addClass('submenu');
+            }
+        })
     } );
 
     var Tabs = function (obj) {
