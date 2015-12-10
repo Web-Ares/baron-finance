@@ -3,40 +3,59 @@
     max-width: 714px;
     padding-top: 25px;
 }
-.service__item p{
+.service p{
     font-size: 13px;
     color: #777;
     text-align: right;
     line-height: 19px;
     margin-bottom: 24px;
 }
-.service__item p span{
-    font-weight: 700;
+.service strong{
+    font-size: 13px;
+    color: #000;
 }
 .service__item{
     margin-bottom: 26px;
 }
-.service__item div{
+.service img{
     position: relative;
-    width: 320px;
-    height: 155px;
-    margin: 0 auto;
+    width: 100%;
+    height: auto;
     margin-bottom: 22px;
-    overflow: hidden;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
 }
-.service .site__title{
+.service a{
+    color: #000;
+    text-decoration: underline;
+}
+.content a:active{
+    color: #780500;
+}
+
+.service a:hover{
+    color: #780500;
+    text-decoration: none;
+}
+.service h1{
     font-size: 30px;
     font-weight: 700;
     text-align: right;
+    color: #790301;
+    margin-bottom: 8px;
 }
+.service h6,
+.service h5,
+.service h4,
 .service h2{
     font-size: 20px;
     color: #780500;
     margin-bottom: 10px;
     line-height: 21px;
+}
+.service h6{
+    font-size: 15px;
+}
+.service h5{
+    font-size: 13px;
 }
 .service h3{
     font-size: 16px;
@@ -44,6 +63,9 @@
     margin-bottom: 10px;
     line-height: 21px;
     font-weight: 400;
+}
+.service h4{
+    text-decoration: underline;
 }
 .service ul{
     position: relative;
@@ -69,26 +91,33 @@
     height:12px;
     background: url("../img/services-right.png") no-repeat center;
 }
+.service dl {
+    margin: 0 0 15px 0;
+}
+.service dt {
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+.service dd {
+    margin-bottom: 5px;
+}
 
 @media (min-width: 768px) {
     /*------------about__item------------*/
-    .service__item div{
-        width: 300px;
-        height: 154px;
+    .service img{
+        width: 320px;
+        height: 180px;
         margin: 0 20px 20px 0;
     }
-    .service .site__title {
+    .service h1 {
         text-align: right;
         margin-bottom: 17px;
     }
-    .service__item p {
+    .service p {
         margin-bottom: 30px;
     }
     /*------------/about__item------------*/
 }
-    .service__item .services-pic-first{
-         margin-top:44px;
-    }
 @media (min-width: 1040px) {
     /*------------about__item------------*/
     .service ul {
@@ -100,14 +129,11 @@
         margin-bottom: 13px;
         padding-left: 15px;
     }
-    .service__item div {
+    .service img{
         width: 320px;
-        height: 175px;
-        float: left;
+        height: 180px;
         left: -2px;
-        top: -39px;
-        margin: 0 15px -21px 8px;
-        padding-top: 44px;
+        margin: 0 15px 0 8px;
     }
     .service{
         display: inline-block;
