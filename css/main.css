@@ -330,7 +330,7 @@ label {
     margin-bottom: 50px;
 }
 .site__aside {
-    padding-top: 16px;
+    padding-top: 0;
 }
 .site__aside blockquote {
     position: relative;
@@ -999,12 +999,12 @@ label {
         width: calc(100% - 270px);
     }
     .site__wrap_aside {
-        padding: 45px 7px 0 13px;
+        padding: 0 7px 0 13px;
     }
     .site__caption {
         border-top: 1px solid #000;
         height: 126px;
-        margin-bottom: 79px;
+        margin-bottom: 60px;
     }
     .site__caption:before {
         top: 1px;
@@ -1025,6 +1025,7 @@ label {
         -webkit-flex-direction: column;
         -ms-flex-direction: column;
         flex-direction: column;
+        padding-bottom: 28px;
     }
     .site__aside div{
         -webkit-box-ordinal-group: 3;
