@@ -87,7 +87,6 @@ label {
 .site__wrap {
     max-width: 1040px;
     margin: 0 auto;
-    padding: 0 26px;
 }
 .site__content {
     position: relative;
@@ -497,7 +496,7 @@ label {
     left: 0;
     right: 0;
     opacity: 0;
-    border-radius: 7px;
+    border-radius: 5px;
     visibility: hidden;
     background: -webkit-linear-gradient(top,  #800500 0%,#580200 100%);
     background: linear-gradient(to bottom,  #800500 0%,#580200 100%);
@@ -511,6 +510,74 @@ label {
 .btn > span {
     position: relative;
     z-index: 2;
+}
+
+.btn_green {
+    position: relative;
+    display: block;
+    overflow: visible;
+    height: 18px;
+    width: 65px;
+    padding: 0;
+    border: none;
+    border-radius: 5px;
+    text-shadow: none;
+    background: none;
+}
+.btn_green:after {
+    content: '';
+    position: absolute;
+    border-radius: 7px;
+    left: 0;
+    width: 100%;
+    bottom: -10px;
+    height: 50%;
+    background: -webkit-linear-gradient(top,  rgba(20,119,17,0.41) 0%,rgba(20,119,17,0) 100%);
+    background: linear-gradient(to bottom,  rgba(20,119,17,0.41) 0%,rgba(20,119,17,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#69147711', endColorstr='#00147711',GradientType=0 );
+}
+.btn_green:hover:before {
+    display: none;
+}
+.btn_green a {
+    display: block;
+    position: relative;
+    border-radius: 5px;
+    overflow: hidden;
+    background: #c2d591;
+    background: -webkit-linear-gradient(top,  #c2d591 0%,#147711 100%);
+    background: linear-gradient(to bottom,  #c2d591 0%,#147711 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c2d591', endColorstr='#147711',GradientType=0 );
+}
+.btn_green a:before {
+    content: '';
+    opacity: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    border-radius: 5px;
+    -webkit-transition: opacity 0.3s ease;
+    transition: opacity 0.3s ease;
+    position: absolute;
+    background: #147711;
+    background: -webkit-linear-gradient(top,  #147711 0%,#c3d692 100%);
+    background: linear-gradient(to bottom,  #147711 0%,#c3d692 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#147711', endColorstr='#c3d692',GradientType=0 );
+}
+.btn_green a span {
+    font-size: 9px;
+    color: rgb( 255, 255, 255 );
+    text-align: right;
+    text-shadow: 0.5px 0.866px 1px rgb( 0, 0, 0 );
+    position: relative;
+    z-index: 2;
+    vertical-align: top;
+    display: inline-block;
+    padding-top: 4px;
+}
+.btn_green a:hover:before {
+    opacity: 1;
 }
 /*------------/btn------------*/
 
@@ -805,7 +872,78 @@ label {
 }
 /* ------------ /recommend-icon ------------ */
 
+/* ------------ partner ------------ */
+.partner {
+    background: url("../img/partner-bg.jpg") repeat;
+    width: 100%;
+    position: relative;
+    margin-bottom: 24px;
+    padding: 22px 23px 23px 0;
+}
+.partner:before {
+    content:'';
+    position: absolute;
+    width: 204px;
+    height: 137px;
+    bottom: 0;
+    left: 0;
+    background: url("../pic/partner__pic_mobile.png") no-repeat;
+    background-size: contain;
+}
+.partner__title {
+    font-weight: 700;
+    font-size: 15px;
+    color: #780500;
+    margin-bottom: 6px;
+}
+.partner__title span {
+    font-weight: 400;
+}
+.partner__sub-title {
+    display: block;
+    font-size: 11px;
+    color: #0a700c;
+    margin-bottom: 8px;
+    max-width: calc(100% - 198px);
+}
+.partner p {
+    font-size: 11px;
+    color: #777;
+    line-height: 1.3;
+    margin-bottom: 12px;
+    max-width: calc(100% - 195px);
+    letter-spacing: -0.2px;
+}
+/* ------------ /partner ------------ */
+
 @media (min-width: 768px) {
+
+    /*------------btn------------*/
+    .btn_green {
+        height: auto;
+        width: 135px;
+        border-radius: 7px;
+    }
+    .btn_green:after {
+        border-radius: 7px;
+        bottom: -21px;
+    }
+    .btn_green:hover:before {
+        display: none;
+    }
+    .btn_green a {
+        border-radius: 7px;
+        height: 36px;
+    }
+    .btn_green a:before {
+        border-radius: 7px;
+    }
+    .btn_green a span {
+        font-size: 18px;
+        padding-top: 7px;
+    }
+    /*------------/btn------------*/
+
     /* --------------- site --------------- */
     .site:after,
     .site__footer-layout {
@@ -1077,6 +1215,36 @@ label {
     }
     /* ------------ /recommend-text ------------ */
 
+    /* ------------ partner ------------ */
+    .partner {
+        padding: 60px 0;
+    }
+    .partner:before {
+        width: 337px;
+        height: 225px;
+        bottom: 0;
+        left: 0;
+        background: url("../pic/partner__pic_2.png") no-repeat;
+        background-size: contain;
+    }
+    .partner__title {
+        font-size: 26px;
+        margin-bottom: 12px;
+    }
+    .partner__title span {}
+    .partner__sub-title {
+        font-size: 24px;
+        max-width: calc(100% - 350px);
+    }
+    .partner p {font-size: 14px;
+        color: #777;
+        line-height: 1.3;
+        margin-bottom: 38px;
+        max-width: calc(100% - 350px);
+        letter-spacing: -0.2px;
+    }
+    /* ------------ /partner ------------ */
+
 }
 
 @media (min-width: 1040px) {
@@ -1325,5 +1493,28 @@ label {
         padding: 0 20px;
     }
     /* ------------ /recommend-icon ------------ */
+
+    /* ------------ partner ------------ */
+    .partner {
+        padding: 111px 0 66px;
+        margin-bottom: 51px;
+        overflow: hidden;
+    }
+    .partner:before {
+        width: 674px;
+        height: 449px;
+        bottom: -30px;
+        left: 50%;
+        margin-left: -679px;
+        background: url("../pic/partner__pic_2.png") no-repeat;
+        background-size: contain;
+    }
+    .partner__title {}
+    .partner__title span {}
+    .partner__sub-title {}
+    .partner p {
+        max-width: calc(100% - 625px);
+    }
+    /* ------------ /partner ------------ */
 
 }
