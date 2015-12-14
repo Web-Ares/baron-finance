@@ -2,7 +2,7 @@
 
 /*
     recommended styles
-    version: 09.12.2015
+    version: 14.12.2015
 
     recommended
 
@@ -10,8 +10,8 @@
 
 /* ------------ recommended ------------ */
 .recommended__logo {
-    text-align: center;
-    padding: 17px 0 1px;
+    text-align: right;
+    padding: 17px 5px 1px 5px;
 }
 .recommended__logo a {
     display: inline-block;
@@ -25,8 +25,6 @@
 }
 .recommended__logo a:hover {
     opacity: 0.7;
-}
-.recommended__logo a > span > span {
 }
 .recommended__logo a img {
     display: inline-block;
@@ -74,14 +72,10 @@
 @media (min-width: 768px) {
 
     /* ------------ recommended ------------ */
-    .recommended__logo {}
-    .recommended__logo a {}
-    .recommended__logo a > span > span {}
-    .recommended__logo a img {}
     .recommended__txt {
         display: inline-block;
         width: 214px;
-        margin: 0 5px 35px;
+        margin: 0 10px 35px;
         padding: 6px 8px 9px;
     }
     .recommended__txt > div {
@@ -94,8 +88,8 @@
         bottom: -9px;
     }
     .recommended__txt-wrap {
-        text-align: center;
-        padding: 26px 9px 1px;
+        text-align: right;
+        padding: 26px 9px 1px 0;
     }
     .recommended__txt p {
         font-size: 12px;
@@ -111,7 +105,7 @@
     .recommended__logo a {
         width: 148px;
         height: 148px;
-        margin: 0 10px 16px;
+        margin: 0 14px 16px;
     }
     /* ------------ /recommended ------------ */
 
