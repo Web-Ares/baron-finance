@@ -26,6 +26,8 @@
 .recommended__logo a:hover {
     opacity: 0.7;
 }
+.recommended__logo a > span > span {
+}
 .recommended__logo a img {
     display: inline-block;
     max-width: 100%;
@@ -40,7 +42,7 @@
     width: 100%;
 }
 .recommended__txt > div {
-    text-align: justify;
+    text-align: right;
     overflow: hidden;
     height: 203px;
 }
@@ -72,6 +74,10 @@
 @media (min-width: 768px) {
 
     /* ------------ recommended ------------ */
+    .recommended__logo {}
+    .recommended__logo a {}
+    .recommended__logo a > span > span {}
+    .recommended__logo a img {}
     .recommended__txt {
         display: inline-block;
         width: 214px;
