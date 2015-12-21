@@ -1,7 +1,22 @@
 /*------------about__item------------*/
+.about__item{
+    margin-bottom: 35px;
+}
+/*------------/about__item------------*/
+.service .alignleft{
+    float: left;
+}
+.service .alignright{
+    float: right;
+}
+.service .aligncenter{
+}
+.service .alignnone{
+    display: block;
+}
+/*------------service------------*/
 .service{
     max-width: 714px;
-    padding-top: 25px;
 }
 .service p{
     font-size: 13px;
@@ -40,7 +55,7 @@
     font-weight: 700;
     text-align: right;
     color: #790301;
-    margin-bottom: 8px;
+    margin-bottom: 11px;
 }
 .service h6,
 .service h5,
@@ -52,13 +67,17 @@
     line-height: 21px;
 }
 .service h6{
-    font-size: 15px;
+    font-size: 25px;
 }
 .service h5{
-    font-size: 13px;
+    font-size: 16px;
+    color: #780500;
+    margin-bottom: 10px;
+    line-height: 21px;
+    font-weight: 400;
 }
 .service h3{
-    font-size: 16px;
+    font-size: 20px;
     color: #780500;
     margin-bottom: 10px;
     line-height: 21px;
@@ -103,23 +122,26 @@
 }
 
 @media (min-width: 768px) {
-    /*------------about__item------------*/
+    /*------------service------------*/
+    .service .alignright{
+        float: right;
+        margin: 0 0 20px 20px;
+    }
     .service img{
-        width: 320px;
-        height: 180px;
+        width: initial;
         margin: 0 20px 20px 0;
     }
     .service h1 {
         text-align: right;
-        margin-bottom: 17px;
+        margin-bottom: 10px;
     }
     .service p {
-        margin-bottom: 30px;
+        margin-bottom: 15px;
     }
-    /*------------/about__item------------*/
+    /*------------/service------------*/
 }
 @media (min-width: 1040px) {
-    /*------------about__item------------*/
+    /*------------service------------*/
     .service ul {
         margin-top: 16px;
         padding: 27px 48px 10px 0;
@@ -130,8 +152,6 @@
         padding-left: 15px;
     }
     .service img{
-        width: 320px;
-        height: 180px;
         left: -2px;
         margin: 0 15px 0 8px;
     }
@@ -139,7 +159,13 @@
         display: inline-block;
         margin-right: 21px;
         float: right;
-        padding-top: 30px;
     }
-    /*------------/about__item------------*/
+    /*------------/service------------*/
+
+    /*------------about------------*/
+    .about img{
+        left: 1px;
+        margin: -3px 19px 18px 8px;
+    }
+    /*------------/about------------*/
 }
