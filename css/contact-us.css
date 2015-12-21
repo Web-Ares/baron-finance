@@ -34,6 +34,9 @@
 .contact-us__contacts > span {
     padding: 0 24px 0 0;
 }
+.contact-us__contacts > span > span {
+    font-weight: 700;
+}
 .contact-us__contacts > ul {
     padding: 14px 0 12px;
 }
